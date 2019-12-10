@@ -19,9 +19,11 @@ echo "-----> Starting SonarQube"
 
 /home/vcap/app/sonarqube/bin/linux-x86-64/sonar.sh start
 
-echo "-----> Tailing log"
+echo "-----> Configurations"
 sleep 10 # give it a bit of time to create files
 cd /home/vcap/app/sonarqube/logs
+
+ls
 
 cat /home/vcap/app/sonarqube/conf/sonar.properties
 echo "-----> Tailing log"
