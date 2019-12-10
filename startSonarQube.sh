@@ -22,4 +22,7 @@ echo "-----> Starting SonarQube"
 echo "-----> Tailing log"
 sleep 10 # give it a bit of time to create files
 cd /home/vcap/app/sonarqube/logs
+
+cat /home/vcap/app/sonarqube/conf/sonar.properties
+echo "-----> Tailing log"
 tail -f ./sonar.log ./es.log ./web.log ./ce.log ./access.log
